@@ -35,9 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  
+
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  gem 'sqlite3', '~> 1.3.10'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -47,6 +47,8 @@ group :development, :test do
 
   gem 'rspec-rails'
   gem 'autotest'
+  gem "nokogiri", ">= 1.6.7.rc"
+  gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
 end
 
 group :production do
